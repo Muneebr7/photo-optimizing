@@ -17,7 +17,6 @@ export default  function Form() {
         e.preventDefault()
         const file = await e.target['file']
         const image = file.files[0]
-      
         
         if(image){
             try {
@@ -52,12 +51,12 @@ export default  function Form() {
         alt="preview"
        /> }
 
-       {optimizeImage && <Image 
+       {/* {optimizeImage && <Image 
         src={optimizeImage}
         width={200}
         height={200}
         alt="preview" 
-        /> }
+        /> } */}
         </div>
         
        
